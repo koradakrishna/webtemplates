@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  position: relative;
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%) padding: 12px 24px;
+  border: 1px solid white;
+  margin: 15px 0px;
+  letter-spacing: 4px;
+  color: white;
+  font-size: 24px;
+}
+
+.navbar {
+  width: 100%;
+  overflow: hidden padding: 8px 16px;
+  border: none;
+  display: block;
+  outline: 0;
+  text-align: center;
+  justify-content: center;
+  padding-left: 575px;
+}
+
+.navbar1 {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  background-color: silver;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 1px solid grey;
+  justify-content: center;
+  padding-left: 500px;
+}
+
+.navbar .navbar1 {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+.bottommiddle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+}
+
+.vcenter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contact {
+  max-width: 1000px;
+  margin: auto;
+  background: silver;
+  padding: 10px;
+}
+
+/*Contact*/
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightgrey;
+}
+
+@media screen and (max-width: 480px) {
+  .button, .navbar1{
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%) padding: 10px 15px;
+    border: 1px solid white;
+    margin: 10px 0px;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    display: block;
+    position: absolute;
+  }
+}
